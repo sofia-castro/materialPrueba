@@ -51,7 +51,7 @@ cat("El tamaño de la muestra para una prueba t debe ser n =", tamano_t2, "\n\n"
 #¿Y si quisiera ser bien exigente y bajar la probabilidad
 #de cometer un error de tipo 1 a un 1% solamente?
 alfa <- 0.01
-tam <-<- power.t.test(delta = diferencia, sd = desv, sig.level = alfa,
+tam <-power.t.test(delta = diferencia, sd = desv, sig.level = alfa,
                       power = poder, type = "one.sample",
                       alternative = "two.sided")
 tamano_t1 <- ceiling(tam[["n"]])
